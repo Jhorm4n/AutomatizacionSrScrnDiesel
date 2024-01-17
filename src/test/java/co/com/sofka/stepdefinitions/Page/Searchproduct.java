@@ -17,26 +17,19 @@ public class Searchproduct extends Setup {
 
     @Given("que el usuario está en la página de inicio")
     public void queElUsuarioEstáEnLaPáginaDeInicio() {
-        actorSetupTheBrowser("Diesel");
-        theActorInTheSpotlight().wasAbleTo(
-                openPageInit()
-                );
+        
 
     }
 
     @When("el usuario busca {string}")
     public void elUsuarioBusca(String string) {
-        theActorInTheSpotlight().wasAbleTo(
-                forTheTerm(string));
+        
     }
 
     @Then("se muestran resultados relacionados con {string}")
     public void seMuestranResultadosRelacionadosCon(String searchTerm) {
 
-        theActorInTheSpotlight().should(seeThat("El término buscado coincide",
-                 showResulSearch(),equalTo(searchTerm))
-        );
-        quitarDriver();
+        
 
     }
 

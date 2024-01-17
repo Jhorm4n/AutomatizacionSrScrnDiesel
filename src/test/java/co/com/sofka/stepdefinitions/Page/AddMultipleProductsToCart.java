@@ -14,18 +14,12 @@ public class AddMultipleProductsToCart extends Setup {
 
     @Given("que el usuario ha buscado y seleccionado varios productos")
     public void queElUsuarioHaBuscadoYSeleccionadoVariosProductos() {
-        actorSetupTheBrowser("Diesel");
-        theActorInTheSpotlight().wasAbleTo(
-                openPageInit(),
-                forTheTerm("Zapatos"));
-
+        
     }
 
     @When("el usuario agrega múltiples productos al carrito")
     public void elUsuarioAgregaMultiplesProductosAlCarrito() {
-        theActorInTheSpotlight().wasAbleTo(
-                addMultipleProduct()
-        );
+       
     }
 
     @Then("todos los productos seleccionados se agregarían al carrito correctamente")

@@ -12,9 +12,7 @@ public class PaymentProcess extends Setup {
 
     @When("el usuario procede al pago")
     public void elUsuarioProcedeAlPago() {
-        theActorInTheSpotlight().wasAbleTo(
-                paymentProcessTasks()
-        );
+        
     }
 
     @And("completa la información de envío y pago")

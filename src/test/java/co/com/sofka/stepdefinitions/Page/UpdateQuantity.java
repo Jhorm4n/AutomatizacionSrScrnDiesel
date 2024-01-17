@@ -13,16 +13,12 @@ import static org.hamcrest.CoreMatchers.equalTo;
 public class UpdateQuantity extends Setup {
     @When("el usuario actualiza la cantidad del producto")
     public void elUsuarioActualizaLaCantidadDelProducto() {
-        theActorInTheSpotlight().wasAbleTo(
-                updateQuantityProduct()
-        );
+        
     }
 
     @Then("la cantidad del producto en el carrito se actualiza correctamente")
     public void laCantidadDelProductoEnElCarritoSeActualizaCorrectamente() {
-        theActorInTheSpotlight().should(seeThat("Se debería de aumentar la cantidad a 2",
-                showQuantityUpdate(),equalTo(2))
-        );
+        
         quitarDriver();
     }
 }

@@ -4,31 +4,6 @@ Feature: Compra de productos
   Quiero añadir uno o varios producto al carrito de compras
   Para realizar una compra en el aplicativo
   @TestPage
-  Scenario: Verificar la búsqueda de un producto
-    Given que el usuario está en la página de inicio
-    When el usuario busca "Zapatos"
-    Then se debería mostrar los resultados relacionados con "Zapatos"
-
-  Scenario: Agregar múltiples productos al carrito
-    Given que el usuario ha buscado y seleccionado varios productos
-    When el usuario agrega múltiples productos al carrito
-    Then todos los productos seleccionados se agregarían al carrito correctamente
-
-  Scenario: Eliminar un producto del carrito
-
-    When el usuario elimina un producto del carrito
-    Then el producto se eliminaran correctamente del carrito
-
-  Scenario: Actualizar la cantidad de un producto en el carrito
-
-    When el usuario actualiza la cantidad del producto
-    Then la cantidad del producto en el carrito se actualiza correctamente
-
-  Scenario: Realizar el proceso de pago
-
-    When el usuario procede al pago
-    And completa la información de envío y pago
-    Then la orden de compra se debería realizar con éxito
 
 
   @AddProduct

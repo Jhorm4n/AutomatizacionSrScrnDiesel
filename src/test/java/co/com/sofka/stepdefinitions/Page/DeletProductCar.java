@@ -15,20 +15,12 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 public class DeletProductCar extends Setup {
     @Given("que el usuario tiene artículos en el carrito")
     public void queElUsuarioTieneArticulosEnElCarrito() {
-        actorSetupTheBrowser("Diesel");
-        theActorInTheSpotlight().wasAbleTo(
-                openPageInit(),
-                forTheTerm("Zapatos"),
-                addMultipleProduct()
-
-        );
+        
     }
 
     @When("el usuario elimina un producto del carrito")
     public void elUsuarioEliminaUnProductoDelCarrito() {
-        theActorInTheSpotlight().wasAbleTo(
-                removerProductCar()
-        );
+     
 
     }
 

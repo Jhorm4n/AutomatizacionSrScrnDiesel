@@ -5,7 +5,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
-
+//RUNER DE LA API REST 
 @CucumberOptions(
         features ="src/test/resources/features/ApiRest",
         glue = "co.com.sofka.stepdefinitions",

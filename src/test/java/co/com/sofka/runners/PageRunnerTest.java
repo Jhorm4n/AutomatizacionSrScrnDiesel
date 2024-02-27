@@ -5,7 +5,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
-//pagina 1 gg jhomrna 
+//runner de la pagina de diesel 
 @CucumberOptions(
         features ="src/test/resources/features/Page",
         glue = "co.com.sofka.stepdefinitions",
